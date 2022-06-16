@@ -1,0 +1,10 @@
+
+version: 2
+
+models:
+    - name: f_app_master_1
+      columns: 
+        - name: sys_id
+          tests:
+            - not_null
+            - unique

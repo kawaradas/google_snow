@@ -1,0 +1,759 @@
+
+
+============================== 2022-06-16 05:54:36.326876 | 6fb142b6-6cfd-4c6b-a4b6-73c985a2572c ==============================
+05:54:36.326876 [info ] [MainThread]: Running with dbt=1.1.0
+05:54:36.326876 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+05:54:36.326876 [debug] [MainThread]: Tracking: do not track
+
+
+============================== 2022-06-16 05:55:22.598420 | 57a437fb-27e1-44f7-83da-5e987019bb9b ==============================
+05:55:22.598420 [info ] [MainThread]: Running with dbt=1.1.0
+05:55:22.598420 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'which': 'deps', 'rpc_method': 'deps', 'indirect_selection': 'eager'}
+05:55:22.598420 [debug] [MainThread]: Tracking: do not track
+05:55:22.634825 [debug] [MainThread]: Set downloads directory='C:\Users\Systena\AppData\Local\Temp\dbt-downloads-06iqo7ot'
+05:55:22.634825 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+05:55:23.895354 [debug] [MainThread]: STDOUT: "b''"
+05:55:23.895354 [debug] [MainThread]: STDERR: "b"Cloning into '859fd0fa21176efee375a447937f7a46'...\n""
+05:55:23.895354 [debug] [MainThread]: Pulling new dependency 859fd0fa21176efee375a447937f7a46.
+05:55:23.895354 [debug] [MainThread]: Executing "git rev-parse HEAD"
+05:55:23.934193 [debug] [MainThread]: STDOUT: "b'ac072a3c4b78d43a1c013e7de8b8fa6e290b544e\n'"
+05:55:23.934193 [debug] [MainThread]: STDERR: "b''"
+05:55:23.934193 [debug] [MainThread]:   Checking out revision 0.8.2.
+05:55:23.934193 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
+05:55:23.968481 [debug] [MainThread]: STDOUT: "b''"
+05:55:23.968481 [debug] [MainThread]: STDERR: "b''"
+05:55:23.968481 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
+05:55:25.205998 [debug] [MainThread]: STDOUT: "b''"
+05:55:25.205998 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n * [new tag]         0.0.1      -> 0.0.1\n * [new tag]         0.1.0      -> 0.1.0\n * [new tag]         0.1.1      -> 0.1.1\n * [new tag]         0.1.10     -> 0.1.10\n * [new tag]         0.1.11     -> 0.1.11\n * [new tag]         0.1.12     -> 0.1.12\n * [new tag]         0.1.13     -> 0.1.13\n * [new tag]         0.1.14     -> 0.1.14\n * [new tag]         0.1.15     -> 0.1.15\n * [new tag]         0.1.16     -> 0.1.16\n * [new tag]         0.1.17     -> 0.1.17\n * [new tag]         0.1.18     -> 0.1.18\n * [new tag]         0.1.19     -> 0.1.19\n * [new tag]         0.1.2      -> 0.1.2\n * [new tag]         0.1.20     -> 0.1.20\n * [new tag]         0.1.21     -> 0.1.21\n * [new tag]         0.1.22     -> 0.1.22\n * [new tag]         0.1.23     -> 0.1.23\n * [new tag]         0.1.24     -> 0.1.24\n * [new tag]         0.1.25     -> 0.1.25\n * [new tag]         0.1.3      -> 0.1.3\n * [new tag]         0.1.4      -> 0.1.4\n * [new tag]         0.1.5      -> 0.1.5\n * [new tag]         0.1.6      -> 0.1.6\n * [new tag]         0.1.7      -> 0.1.7\n * [new tag]         0.1.8      -> 0.1.8\n * [new tag]         0.1.9      -> 0.1.9\n * [new tag]         0.2.0      -> 0.2.0\n * [new tag]         0.2.1      -> 0.2.1\n * [new tag]         0.2.2      -> 0.2.2\n * [new tag]         0.2.3      -> 0.2.3\n * [new tag]         0.2.4      -> 0.2.4\n * [new tag]         0.2.5      -> 0.2.5\n * [new tag]         0.3.0      -> 0.3.0\n * [new tag]         0.4.0      -> 0.4.0\n * [new tag]         0.4.1      -> 0.4.1\n * [new tag]         0.5.0      -> 0.5.0\n * [new tag]         0.5.1      -> 0.5.1\n * [new tag]         0.6.0      -> 0.6.0\n * [new tag]         0.6.1      -> 0.6.1\n * [new tag]         0.6.2      -> 0.6.2\n * [new tag]         0.6.3      -> 0.6.3\n * [new tag]         0.6.4      -> 0.6.4\n * [new tag]         0.6.5      -> 0.6.5\n * [new tag]         0.6.6      -> 0.6.6\n * [new tag]         0.7.0      -> 0.7.0\n * [new tag]         0.7.1      -> 0.7.1\n * [new tag]         0.7.2      -> 0.7.2\n * [new tag]         0.7.3      -> 0.7.3\n * [new tag]         0.7.4      -> 0.7.4\n * [new tag]         0.7.4-b1   -> 0.7.4-b1\n * [new tag]         0.7.4b1    -> 0.7.4b1\n * [new tag]         0.7.5      -> 0.7.5\n * [new tag]         0.7.6      -> 0.7.6\n * [new tag]         0.8.0      -> 0.8.0\n * [new tag]         0.8.1      -> 0.8.1\n * [new tag]         0.8.2      -> 0.8.2\n * [new tag]         0.8.3      -> 0.8.3\n * [new tag]         0.8.4      -> 0.8.4\n * [new tag]         0.8.5      -> 0.8.5\n'"
+05:55:25.205998 [debug] [MainThread]: Executing "git tag --list"
+05:55:25.277742 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n'"
+05:55:25.277742 [debug] [MainThread]: STDERR: "b''"
+05:55:25.277742 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
+05:55:25.403585 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+05:55:25.403585 [debug] [MainThread]: STDERR: "b''"
+05:55:25.403585 [debug] [MainThread]: Executing "git rev-parse HEAD"
+05:55:25.439193 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+05:55:25.439193 [debug] [MainThread]: STDERR: "b''"
+05:55:25.439193 [debug] [MainThread]:   Checked out at 5717b10.
+05:55:25.439193 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+05:55:25.481780 [debug] [MainThread]: STDOUT: "b''"
+05:55:25.481780 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
+05:55:25.481780 [debug] [MainThread]: command return code=128
+05:55:25.481780 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
+05:55:25.481780 [debug] [MainThread]: Executing "git rev-parse HEAD"
+05:55:25.498164 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+05:55:25.498164 [debug] [MainThread]: STDERR: "b''"
+05:55:25.513919 [debug] [MainThread]:   Checking out revision 0.8.2.
+05:55:25.513919 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
+05:55:25.537554 [debug] [MainThread]: STDOUT: "b''"
+05:55:25.537554 [debug] [MainThread]: STDERR: "b''"
+05:55:25.537554 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
+05:55:26.405871 [debug] [MainThread]: STDOUT: "b''"
+05:55:26.405871 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n'"
+05:55:26.405871 [debug] [MainThread]: Executing "git tag --list"
+05:55:26.438450 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n'"
+05:55:26.438450 [debug] [MainThread]: STDERR: "b''"
+05:55:26.438450 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
+05:55:26.517277 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+05:55:26.517277 [debug] [MainThread]: STDERR: "b''"
+05:55:26.517277 [debug] [MainThread]: Executing "git rev-parse HEAD"
+05:55:26.554153 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+05:55:26.554153 [debug] [MainThread]: STDERR: "b''"
+05:55:26.554153 [debug] [MainThread]: Already at 5717b10, nothing to do.
+05:55:26.554153 [info ] [MainThread]: Installing https://github.com/fishtown-analytics/dbt-utils.git
+05:55:26.554153 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+05:55:26.625645 [debug] [MainThread]: STDOUT: "b''"
+05:55:26.625645 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
+05:55:26.625645 [debug] [MainThread]: command return code=128
+05:55:26.625645 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
+05:55:26.625645 [debug] [MainThread]: Executing "git rev-parse HEAD"
+05:55:26.657449 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+05:55:26.657449 [debug] [MainThread]: STDERR: "b''"
+05:55:26.657449 [debug] [MainThread]:   Checking out revision 0.8.2.
+05:55:26.657449 [debug] [MainThread]: Executing "git remote set-branches origin 0.8.2"
+05:55:26.691873 [debug] [MainThread]: STDOUT: "b''"
+05:55:26.691873 [debug] [MainThread]: STDERR: "b''"
+05:55:26.691873 [debug] [MainThread]: Executing "git fetch origin --depth 1 --tags 0.8.2"
+05:55:27.557157 [debug] [MainThread]: STDOUT: "b''"
+05:55:27.557157 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * tag               0.8.2      -> FETCH_HEAD\n'"
+05:55:27.557157 [debug] [MainThread]: Executing "git tag --list"
+05:55:27.643935 [debug] [MainThread]: STDOUT: "b'0.0.1\n0.1.0\n0.1.1\n0.1.10\n0.1.11\n0.1.12\n0.1.13\n0.1.14\n0.1.15\n0.1.16\n0.1.17\n0.1.18\n0.1.19\n0.1.2\n0.1.20\n0.1.21\n0.1.22\n0.1.23\n0.1.24\n0.1.25\n0.1.3\n0.1.4\n0.1.5\n0.1.6\n0.1.7\n0.1.8\n0.1.9\n0.2.0\n0.2.1\n0.2.2\n0.2.3\n0.2.4\n0.2.5\n0.3.0\n0.4.0\n0.4.1\n0.5.0\n0.5.1\n0.6.0\n0.6.1\n0.6.2\n0.6.3\n0.6.4\n0.6.5\n0.6.6\n0.7.0\n0.7.1\n0.7.2\n0.7.3\n0.7.4\n0.7.4-b1\n0.7.4b1\n0.7.5\n0.7.6\n0.8.0\n0.8.1\n0.8.2\n0.8.3\n0.8.4\n0.8.5\n0.8.6\n'"
+05:55:27.643935 [debug] [MainThread]: STDERR: "b''"
+05:55:27.643935 [debug] [MainThread]: Executing "git reset --hard tags/0.8.2"
+05:55:27.703826 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+05:55:27.703826 [debug] [MainThread]: STDERR: "b''"
+05:55:27.703826 [debug] [MainThread]: Executing "git rev-parse HEAD"
+05:55:27.736100 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+05:55:27.736100 [debug] [MainThread]: STDERR: "b''"
+05:55:27.736100 [debug] [MainThread]: Already at 5717b10, nothing to do.
+05:55:27.736100 [info ] [MainThread]:   Installed from revision 0.8.2
+
+
+============================== 2022-06-16 05:55:36.005467 | 637e6c6d-b47e-46b8-852f-e92be50c7abb ==============================
+05:55:36.005467 [info ] [MainThread]: Running with dbt=1.1.0
+05:55:36.005467 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+05:55:36.005467 [debug] [MainThread]: Tracking: do not track
+05:55:36.005467 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+05:55:36.052344 [debug] [MainThread]: Parsing macros\adapters.sql
+05:55:36.083588 [debug] [MainThread]: Parsing macros\catalog.sql
+05:55:36.083588 [debug] [MainThread]: Parsing macros\materializations\incremental.sql
+05:55:36.083588 [debug] [MainThread]: Parsing macros\materializations\merge.sql
+05:55:36.099221 [debug] [MainThread]: Parsing macros\materializations\seed.sql
+05:55:36.099221 [debug] [MainThread]: Parsing macros\materializations\snapshot.sql
+05:55:36.099221 [debug] [MainThread]: Parsing macros\materializations\table.sql
+05:55:36.099221 [debug] [MainThread]: Parsing macros\materializations\view.sql
+05:55:36.099221 [debug] [MainThread]: Parsing macros\adapters\columns.sql
+05:55:36.099221 [debug] [MainThread]: Parsing macros\adapters\freshness.sql
+05:55:36.114835 [debug] [MainThread]: Parsing macros\adapters\indexes.sql
+05:55:36.114835 [debug] [MainThread]: Parsing macros\adapters\metadata.sql
+05:55:36.114835 [debug] [MainThread]: Parsing macros\adapters\persist_docs.sql
+05:55:36.114835 [debug] [MainThread]: Parsing macros\adapters\relation.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\adapters\schema.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\etc\datetime.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\etc\statement.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\generic_test_sql\accepted_values.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\generic_test_sql\not_null.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\generic_test_sql\relationships.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\generic_test_sql\unique.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_alias.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_database.sql
+05:55:36.130375 [debug] [MainThread]: Parsing macros\get_custom_name\get_custom_schema.sql
+05:55:36.146074 [debug] [MainThread]: Parsing macros\materializations\configs.sql
+05:55:36.146074 [debug] [MainThread]: Parsing macros\materializations\hooks.sql
+05:55:36.146074 [debug] [MainThread]: Parsing macros\materializations\models\incremental\column_helpers.sql
+05:55:36.146074 [debug] [MainThread]: Parsing macros\materializations\models\incremental\incremental.sql
+05:55:36.146074 [debug] [MainThread]: Parsing macros\materializations\models\incremental\is_incremental.sql
+05:55:36.161708 [debug] [MainThread]: Parsing macros\materializations\models\incremental\merge.sql
+05:55:36.161708 [debug] [MainThread]: Parsing macros\materializations\models\incremental\on_schema_change.sql
+05:55:36.177331 [debug] [MainThread]: Parsing macros\materializations\models\table\create_table_as.sql
+05:55:36.177331 [debug] [MainThread]: Parsing macros\materializations\models\table\table.sql
+05:55:36.177331 [debug] [MainThread]: Parsing macros\materializations\models\view\create_or_replace_view.sql
+05:55:36.177331 [debug] [MainThread]: Parsing macros\materializations\models\view\create_view_as.sql
+05:55:36.177331 [debug] [MainThread]: Parsing macros\materializations\models\view\helpers.sql
+05:55:36.192963 [debug] [MainThread]: Parsing macros\materializations\models\view\view.sql
+05:55:36.192963 [debug] [MainThread]: Parsing macros\materializations\seeds\helpers.sql
+05:55:36.192963 [debug] [MainThread]: Parsing macros\materializations\seeds\seed.sql
+05:55:36.208598 [debug] [MainThread]: Parsing macros\materializations\snapshots\helpers.sql
+05:55:36.208598 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot.sql
+05:55:36.224224 [debug] [MainThread]: Parsing macros\materializations\snapshots\snapshot_merge.sql
+05:55:36.224224 [debug] [MainThread]: Parsing macros\materializations\snapshots\strategies.sql
+05:55:36.224224 [debug] [MainThread]: Parsing macros\materializations\tests\helpers.sql
+05:55:36.239837 [debug] [MainThread]: Parsing macros\materializations\tests\test.sql
+05:55:36.239837 [debug] [MainThread]: Parsing macros\materializations\tests\where_subquery.sql
+05:55:36.239837 [debug] [MainThread]: Parsing tests\generic\builtin.sql
+05:55:36.239837 [debug] [MainThread]: Parsing macros\cross_db_utils\any_value.sql
+05:55:36.239837 [debug] [MainThread]: Parsing macros\cross_db_utils\bool_or.sql
+05:55:36.239837 [debug] [MainThread]: Parsing macros\cross_db_utils\cast_bool_to_text.sql
+05:55:36.239837 [debug] [MainThread]: Parsing macros\cross_db_utils\concat.sql
+05:55:36.239837 [debug] [MainThread]: Parsing macros\cross_db_utils\current_timestamp.sql
+05:55:36.239837 [debug] [MainThread]: Parsing macros\cross_db_utils\datatypes.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\dateadd.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\datediff.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\date_trunc.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\escape_single_quotes.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\except.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\hash.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\identifier.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\intersect.sql
+05:55:36.255650 [debug] [MainThread]: Parsing macros\cross_db_utils\last_day.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\length.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\literal.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\position.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\replace.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\right.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\safe_cast.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\split_part.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\width_bucket.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\_is_ephemeral.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\cross_db_utils\_is_relation.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\jinja_helpers\log_info.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\jinja_helpers\pretty_log_format.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\jinja_helpers\pretty_time.sql
+05:55:36.271473 [debug] [MainThread]: Parsing macros\jinja_helpers\slugify.sql
+05:55:36.287761 [debug] [MainThread]: Parsing macros\materializations\insert_by_period_materialization.sql
+05:55:36.292309 [debug] [MainThread]: Parsing macros\schema_tests\accepted_range.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\at_least_one.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\cardinality_equality.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\equality.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\equal_rowcount.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\expression_is_true.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\fewer_rows_than.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\mutually_exclusive_ranges.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\not_accepted_values.sql
+05:55:36.308029 [debug] [MainThread]: Parsing macros\schema_tests\not_constant.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\schema_tests\not_null_proportion.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\schema_tests\recency.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\schema_tests\relationships_where.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\schema_tests\sequential_values.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\schema_tests\test_not_null_where.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\schema_tests\test_unique_where.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\schema_tests\unique_combination_of_columns.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\sql\date_spine.sql
+05:55:36.323649 [debug] [MainThread]: Parsing macros\sql\generate_series.sql
+05:55:36.339267 [debug] [MainThread]: Parsing macros\sql\get_column_values.sql
+05:55:36.339267 [debug] [MainThread]: Parsing macros\sql\get_query_results_as_dict.sql
+05:55:36.339267 [debug] [MainThread]: Parsing macros\sql\get_relations_by_pattern.sql
+05:55:36.339267 [debug] [MainThread]: Parsing macros\sql\get_relations_by_prefix.sql
+05:55:36.339267 [debug] [MainThread]: Parsing macros\sql\get_tables_by_pattern_sql.sql
+05:55:36.339267 [debug] [MainThread]: Parsing macros\sql\get_tables_by_prefix_sql.sql
+05:55:36.339267 [debug] [MainThread]: Parsing macros\sql\get_table_types_sql.sql
+05:55:36.354919 [debug] [MainThread]: Parsing macros\sql\groupby.sql
+05:55:36.354919 [debug] [MainThread]: Parsing macros\sql\haversine_distance.sql
+05:55:36.354919 [debug] [MainThread]: Parsing macros\sql\nullcheck.sql
+05:55:36.354919 [debug] [MainThread]: Parsing macros\sql\nullcheck_table.sql
+05:55:36.354919 [debug] [MainThread]: Parsing macros\sql\pivot.sql
+05:55:36.354919 [debug] [MainThread]: Parsing macros\sql\safe_add.sql
+05:55:36.354919 [debug] [MainThread]: Parsing macros\sql\star.sql
+05:55:36.354919 [debug] [MainThread]: Parsing macros\sql\surrogate_key.sql
+05:55:36.370523 [debug] [MainThread]: Parsing macros\sql\union.sql
+05:55:36.370523 [debug] [MainThread]: Parsing macros\sql\unpivot.sql
+05:55:36.370523 [debug] [MainThread]: Parsing macros\web\get_url_host.sql
+05:55:36.370523 [debug] [MainThread]: Parsing macros\web\get_url_parameter.sql
+05:55:36.370523 [debug] [MainThread]: Parsing macros\web\get_url_path.sql
+05:55:36.620876 [debug] [MainThread]: 1699: static parser successfully parsed f_app_master_1.sql
+05:55:36.652306 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.google_snow.example
+
+05:55:36.667917 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 383 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+05:55:36.667917 [info ] [MainThread]: 
+05:55:36.667917 [debug] [MainThread]: Acquiring new snowflake connection "master"
+05:55:36.667917 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+05:55:36.683473 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+05:55:36.683473 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE"} */
+
+    show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+05:55:36.683473 [debug] [ThreadPool]: Opening a new connection, currently in state init
+05:55:40.945056 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 4.26 seconds
+05:55:40.945056 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+05:55:41.092256 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+05:55:41.107988 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+05:55:41.107988 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+
+    show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+05:55:41.107988 [debug] [ThreadPool]: Opening a new connection, currently in state init
+05:55:41.791907 [debug] [ThreadPool]: SQL status: SUCCESS 22 in 0.68 seconds
+05:55:41.791907 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+05:55:41.901454 [info ] [MainThread]: Concurrency: 5 threads (target='prod')
+05:55:41.901454 [info ] [MainThread]: 
+05:55:41.917077 [debug] [Thread-1  ]: Began running node model.google_snow.f_app_master_1
+05:55:41.917077 [info ] [Thread-1  ]: 1 of 1 START table model AIRBYTE_SCHEMA.f_app_master_1 ................................................................. [RUN]
+05:55:41.917077 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.google_snow.f_app_master_1"
+05:55:41.917077 [debug] [Thread-1  ]: Began compiling node model.google_snow.f_app_master_1
+05:55:41.917077 [debug] [Thread-1  ]: Compiling model.google_snow.f_app_master_1
+05:55:41.917077 [debug] [Thread-1  ]: Writing injected SQL for node "model.google_snow.f_app_master_1"
+05:55:41.917077 [debug] [Thread-1  ]: finished collecting timing info
+05:55:41.917077 [debug] [Thread-1  ]: Began executing node model.google_snow.f_app_master_1
+05:55:41.932858 [debug] [Thread-1  ]: Writing runtime SQL for node "model.google_snow.f_app_master_1"
+05:55:41.948659 [debug] [Thread-1  ]: Using snowflake connection "model.google_snow.f_app_master_1"
+05:55:41.948659 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "node_id": "model.google_snow.f_app_master_1"} */
+
+
+      create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1  as
+      (
+
+
+select
+ *
+from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."____33_"
+where SYS_UPDATED_ON <= '2021-10-13 05:33:49.000'
+      );
+05:55:41.948659 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+05:55:45.334840 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3.39 seconds
+05:55:45.343920 [debug] [Thread-1  ]: finished collecting timing info
+05:55:45.344019 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: Close
+05:55:45.522956 [info ] [Thread-1  ]: 1 of 1 OK created table model AIRBYTE_SCHEMA.f_app_master_1 ............................................................ [[32mSUCCESS 1[0m in 3.61s]
+05:55:45.538502 [debug] [Thread-1  ]: Finished running node model.google_snow.f_app_master_1
+05:55:45.539253 [debug] [MainThread]: Acquiring new snowflake connection "master"
+05:55:45.539253 [info ] [MainThread]: 
+05:55:45.539253 [info ] [MainThread]: Finished running 1 table model in 8.87s.
+05:55:45.539253 [debug] [MainThread]: Connection 'master' was properly closed.
+05:55:45.539253 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+05:55:45.539253 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+05:55:45.539253 [debug] [MainThread]: Connection 'model.google_snow.f_app_master_1' was properly closed.
+05:55:45.539253 [info ] [MainThread]: 
+05:55:45.539253 [info ] [MainThread]: [32mCompleted successfully[0m
+05:55:45.539253 [info ] [MainThread]: 
+05:55:45.539253 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+
+
+============================== 2022-06-16 05:56:59.297115 | 6d8476a0-79d7-4d7b-a7e5-f3d7ad4ad101 ==============================
+05:56:59.297115 [info ] [MainThread]: Running with dbt=1.1.0
+05:56:59.297115 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'indirect_selection': 'eager', 'which': 'test', 'rpc_method': 'test'}
+05:56:59.297115 [debug] [MainThread]: Tracking: do not track
+05:56:59.360023 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+05:56:59.360023 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+05:56:59.360023 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.google_snow.example
+
+05:56:59.375737 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 383 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+05:56:59.375737 [info ] [MainThread]: 
+05:56:59.375737 [debug] [MainThread]: Acquiring new snowflake connection "master"
+05:56:59.375737 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+05:56:59.375737 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+05:56:59.375737 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+
+    show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+05:56:59.375737 [debug] [ThreadPool]: Opening a new connection, currently in state init
+05:57:00.140707 [debug] [ThreadPool]: SQL status: SUCCESS 23 in 0.76 seconds
+05:57:00.156403 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+05:57:00.286043 [info ] [MainThread]: Concurrency: 5 threads (target='prod')
+05:57:00.286043 [info ] [MainThread]: 
+05:57:00.286043 [debug] [Thread-1  ]: Began running node test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2
+05:57:00.286043 [debug] [Thread-2  ]: Began running node test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8
+05:57:00.286043 [info ] [Thread-1  ]: 1 of 2 START test not_null_f_app_master_1_sys_id ....................................................................... [RUN]
+05:57:00.286043 [info ] [Thread-2  ]: 2 of 2 START test unique_f_app_master_1_sys_id ......................................................................... [RUN]
+05:57:00.286043 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2"
+05:57:00.286043 [debug] [Thread-1  ]: Began compiling node test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2
+05:57:00.286043 [debug] [Thread-1  ]: Compiling test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2
+05:57:00.301569 [debug] [Thread-1  ]: Writing injected SQL for node "test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2"
+05:57:00.301569 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8"
+05:57:00.301569 [debug] [Thread-2  ]: Began compiling node test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8
+05:57:00.301569 [debug] [Thread-2  ]: Compiling test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8
+05:57:00.317293 [debug] [Thread-2  ]: Writing injected SQL for node "test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8"
+05:57:00.317293 [debug] [Thread-1  ]: finished collecting timing info
+05:57:00.317293 [debug] [Thread-2  ]: finished collecting timing info
+05:57:00.317293 [debug] [Thread-1  ]: Began executing node test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2
+05:57:00.317293 [debug] [Thread-2  ]: Began executing node test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8
+05:57:00.317293 [debug] [Thread-1  ]: Writing runtime SQL for node "test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2"
+05:57:00.317293 [debug] [Thread-2  ]: Writing runtime SQL for node "test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8"
+05:57:00.332920 [debug] [Thread-1  ]: Using snowflake connection "test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2"
+05:57:00.332920 [debug] [Thread-1  ]: On test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "node_id": "test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+
+
+select sys_id
+from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1
+where sys_id is null
+
+
+
+      
+    ) dbt_internal_test
+05:57:00.332920 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+05:57:00.332920 [debug] [Thread-2  ]: Using snowflake connection "test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8"
+05:57:00.332920 [debug] [Thread-2  ]: On test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "node_id": "test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8"} */
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+    
+
+select
+    sys_id as unique_field,
+    count(*) as n_records
+
+from AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1
+where sys_id is not null
+group by sys_id
+having count(*) > 1
+
+
+
+      
+    ) dbt_internal_test
+05:57:00.332920 [debug] [Thread-2  ]: Opening a new connection, currently in state init
+05:57:01.681579 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 1.35 seconds
+05:57:01.696031 [debug] [Thread-1  ]: finished collecting timing info
+05:57:01.696031 [debug] [Thread-1  ]: On test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2: Close
+05:57:01.824908 [info ] [Thread-1  ]: 1 of 2 PASS not_null_f_app_master_1_sys_id ............................................................................. [[32mPASS[0m in 1.54s]
+05:57:01.824908 [debug] [Thread-1  ]: Finished running node test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2
+05:57:01.949850 [debug] [Thread-2  ]: SQL status: SUCCESS 1 in 1.62 seconds
+05:57:01.949850 [debug] [Thread-2  ]: finished collecting timing info
+05:57:01.949850 [debug] [Thread-2  ]: On test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8: Close
+05:57:02.074896 [error] [Thread-2  ]: 2 of 2 FAIL 34619 unique_f_app_master_1_sys_id ......................................................................... [[31mFAIL 34619[0m in 1.77s]
+05:57:02.074896 [debug] [Thread-2  ]: Finished running node test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8
+05:57:02.074896 [debug] [MainThread]: Acquiring new snowflake connection "master"
+05:57:02.074896 [info ] [MainThread]: 
+05:57:02.090477 [info ] [MainThread]: Finished running 2 tests in 2.70s.
+05:57:02.090477 [debug] [MainThread]: Connection 'master' was properly closed.
+05:57:02.090477 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+05:57:02.090477 [debug] [MainThread]: Connection 'test.google_snow.not_null_f_app_master_1_sys_id.e6094a1ca2' was properly closed.
+05:57:02.090477 [debug] [MainThread]: Connection 'test.google_snow.unique_f_app_master_1_sys_id.d05cc803a8' was properly closed.
+05:57:02.090477 [info ] [MainThread]: 
+05:57:02.090477 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+05:57:02.090477 [info ] [MainThread]: 
+05:57:02.090477 [error] [MainThread]: [31mFailure in test unique_f_app_master_1_sys_id (models\schema.yml)[0m
+05:57:02.090477 [error] [MainThread]:   Got 34619 results, configured to fail if != 0
+05:57:02.090477 [info ] [MainThread]: 
+05:57:02.090477 [info ] [MainThread]:   compiled SQL at target\compiled\google_snow\models\schema.yml\unique_f_app_master_1_sys_id.sql
+05:57:02.090477 [info ] [MainThread]: 
+05:57:02.090477 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=0 TOTAL=2
+
+
+============================== 2022-06-16 06:17:31.934526 | fa5af453-a533-47e3-85b1-c7b79083c7fd ==============================
+06:17:31.934526 [info ] [MainThread]: Running with dbt=1.1.0
+06:17:31.934526 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+06:17:31.934526 [debug] [MainThread]: Tracking: do not track
+06:17:32.012975 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+06:17:32.012975 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+06:17:32.012975 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.google_snow.example
+
+06:17:32.024882 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 383 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+06:17:32.026111 [info ] [MainThread]: 
+06:17:32.027219 [debug] [MainThread]: Acquiring new snowflake connection "master"
+06:17:32.028114 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+06:17:32.037400 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+06:17:32.037400 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE"} */
+
+    show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+06:17:32.037400 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:17:32.962138 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.92 seconds
+06:17:32.962138 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+06:17:33.087178 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+06:17:33.102693 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+06:17:33.102693 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+
+    show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+06:17:33.102693 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:17:33.566391 [debug] [ThreadPool]: SQL status: SUCCESS 23 in 0.46 seconds
+06:17:33.566391 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+06:17:33.704992 [info ] [MainThread]: Concurrency: 5 threads (target='prod')
+06:17:33.704992 [info ] [MainThread]: 
+06:17:33.721024 [debug] [Thread-1  ]: Began running node model.google_snow.f_app_master_1
+06:17:33.721024 [info ] [Thread-1  ]: 1 of 1 START table model AIRBYTE_SCHEMA.f_app_master_1 ................................................................. [RUN]
+06:17:33.721024 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.google_snow.f_app_master_1"
+06:17:33.721024 [debug] [Thread-1  ]: Began compiling node model.google_snow.f_app_master_1
+06:17:33.721024 [debug] [Thread-1  ]: Compiling model.google_snow.f_app_master_1
+06:17:33.721024 [debug] [Thread-1  ]: Writing injected SQL for node "model.google_snow.f_app_master_1"
+06:17:33.721024 [debug] [Thread-1  ]: finished collecting timing info
+06:17:33.721024 [debug] [Thread-1  ]: Began executing node model.google_snow.f_app_master_1
+06:17:33.736666 [debug] [Thread-1  ]: Writing runtime SQL for node "model.google_snow.f_app_master_1"
+06:17:33.736666 [debug] [Thread-1  ]: Using snowflake connection "model.google_snow.f_app_master_1"
+06:17:33.736666 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "node_id": "model.google_snow.f_app_master_1"} */
+
+
+      create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1  as
+      (
+
+
+select
+ *
+from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."____33_"
+where SYS_UPDATED_ON <= '2021-10-13 05:33:49.000'
+      );
+06:17:33.736666 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+06:17:37.155843 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3.42 seconds
+06:17:37.171361 [debug] [Thread-1  ]: finished collecting timing info
+06:17:37.171361 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: Close
+06:17:37.303189 [info ] [Thread-1  ]: 1 of 1 OK created table model AIRBYTE_SCHEMA.f_app_master_1 ............................................................ [[32mSUCCESS 1[0m in 3.58s]
+06:17:37.303189 [debug] [Thread-1  ]: Finished running node model.google_snow.f_app_master_1
+06:17:37.303189 [debug] [MainThread]: Acquiring new snowflake connection "master"
+06:17:37.303189 [info ] [MainThread]: 
+06:17:37.303189 [info ] [MainThread]: Finished running 1 table model in 5.28s.
+06:17:37.303189 [debug] [MainThread]: Connection 'master' was properly closed.
+06:17:37.318731 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+06:17:37.318731 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+06:17:37.318731 [debug] [MainThread]: Connection 'model.google_snow.f_app_master_1' was properly closed.
+06:17:37.318731 [info ] [MainThread]: 
+06:17:37.318731 [info ] [MainThread]: [32mCompleted successfully[0m
+06:17:37.318731 [info ] [MainThread]: 
+06:17:37.318731 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+
+
+============================== 2022-06-16 06:45:37.659167 | 5ef5e53e-8ce8-4795-8769-83f9c3875839 ==============================
+06:45:37.659167 [info ] [MainThread]: Running with dbt=1.1.0
+06:45:37.659167 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+06:45:37.659167 [debug] [MainThread]: Tracking: do not track
+06:45:37.721885 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+06:45:37.721885 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+06:45:37.721885 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.google_snow.example
+
+06:45:37.737511 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 383 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+06:45:37.737511 [info ] [MainThread]: 
+06:45:37.737511 [debug] [MainThread]: Acquiring new snowflake connection "master"
+06:45:37.737511 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+06:45:37.753045 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+06:45:37.753045 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE"} */
+
+    show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+06:45:37.753045 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:45:40.905266 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 3.15 seconds
+06:45:40.907902 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+06:45:41.161870 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+06:45:41.177455 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+06:45:41.177455 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+
+    show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+06:45:41.177455 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:45:41.974687 [debug] [ThreadPool]: SQL status: SUCCESS 23 in 0.8 seconds
+06:45:41.990826 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+06:45:42.091997 [info ] [MainThread]: Concurrency: 5 threads (target='prod')
+06:45:42.091997 [info ] [MainThread]: 
+06:45:42.091997 [debug] [Thread-1  ]: Began running node model.google_snow.f_app_master_1
+06:45:42.091997 [info ] [Thread-1  ]: 1 of 1 START table model AIRBYTE_SCHEMA.f_app_master_1 ................................................................. [RUN]
+06:45:42.107620 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.google_snow.f_app_master_1"
+06:45:42.107620 [debug] [Thread-1  ]: Began compiling node model.google_snow.f_app_master_1
+06:45:42.107620 [debug] [Thread-1  ]: Compiling model.google_snow.f_app_master_1
+06:45:42.107620 [debug] [Thread-1  ]: Writing injected SQL for node "model.google_snow.f_app_master_1"
+06:45:42.107620 [debug] [Thread-1  ]: finished collecting timing info
+06:45:42.107620 [debug] [Thread-1  ]: Began executing node model.google_snow.f_app_master_1
+06:45:42.130796 [debug] [Thread-1  ]: Writing runtime SQL for node "model.google_snow.f_app_master_1"
+06:45:42.131797 [debug] [Thread-1  ]: Using snowflake connection "model.google_snow.f_app_master_1"
+06:45:42.131797 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "node_id": "model.google_snow.f_app_master_1"} */
+
+
+      create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1  as
+      (
+
+
+select
+ *
+from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."____33_"
+where SYS_UPDATED_ON <= '2021-10-13 05:33:49.000'
+      );
+06:45:42.131797 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+06:45:45.012754 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 2.88 seconds
+06:45:45.012754 [debug] [Thread-1  ]: finished collecting timing info
+06:45:45.012754 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: Close
+06:45:45.155225 [info ] [Thread-1  ]: 1 of 1 OK created table model AIRBYTE_SCHEMA.f_app_master_1 ............................................................ [[32mSUCCESS 1[0m in 3.05s]
+06:45:45.155225 [debug] [Thread-1  ]: Finished running node model.google_snow.f_app_master_1
+06:45:45.155225 [debug] [MainThread]: Acquiring new snowflake connection "master"
+06:45:45.155225 [info ] [MainThread]: 
+06:45:45.155225 [info ] [MainThread]: Finished running 1 table model in 7.42s.
+06:45:45.155225 [debug] [MainThread]: Connection 'master' was properly closed.
+06:45:45.155225 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+06:45:45.155225 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+06:45:45.155225 [debug] [MainThread]: Connection 'model.google_snow.f_app_master_1' was properly closed.
+06:45:45.165321 [info ] [MainThread]: 
+06:45:45.165321 [info ] [MainThread]: [32mCompleted successfully[0m
+06:45:45.165321 [info ] [MainThread]: 
+06:45:45.165321 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+
+
+============================== 2022-06-16 06:54:55.008379 | 9419ad26-af62-499a-aa11-a98b24125bac ==============================
+06:54:55.008379 [info ] [MainThread]: Running with dbt=1.1.0
+06:54:55.008379 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+06:54:55.008379 [debug] [MainThread]: Tracking: do not track
+06:54:55.086504 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+06:54:55.086504 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+06:54:55.086504 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.google_snow.example
+
+06:54:55.086504 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 383 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+06:54:55.086504 [info ] [MainThread]: 
+06:54:55.086504 [debug] [MainThread]: Acquiring new snowflake connection "master"
+06:54:55.100827 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+06:54:55.100827 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+06:54:55.100827 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE"} */
+
+    show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+06:54:55.100827 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:54:55.832712 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.73 seconds
+06:54:55.848473 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+06:54:56.091237 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+06:54:56.099250 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+06:54:56.100251 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+
+    show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+06:54:56.100251 [debug] [ThreadPool]: Opening a new connection, currently in state init
+06:54:56.735140 [debug] [ThreadPool]: SQL status: SUCCESS 23 in 0.63 seconds
+06:54:56.750829 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+06:54:56.846248 [info ] [MainThread]: Concurrency: 5 threads (target='prod')
+06:54:56.846248 [info ] [MainThread]: 
+06:54:56.861933 [debug] [Thread-1  ]: Began running node model.google_snow.f_app_master_1
+06:54:56.861933 [info ] [Thread-1  ]: 1 of 1 START table model AIRBYTE_SCHEMA.f_app_master_1 ................................................................. [RUN]
+06:54:56.861933 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.google_snow.f_app_master_1"
+06:54:56.861933 [debug] [Thread-1  ]: Began compiling node model.google_snow.f_app_master_1
+06:54:56.861933 [debug] [Thread-1  ]: Compiling model.google_snow.f_app_master_1
+06:54:56.861933 [debug] [Thread-1  ]: Writing injected SQL for node "model.google_snow.f_app_master_1"
+06:54:56.877828 [debug] [Thread-1  ]: finished collecting timing info
+06:54:56.877828 [debug] [Thread-1  ]: Began executing node model.google_snow.f_app_master_1
+06:54:56.893735 [debug] [Thread-1  ]: Writing runtime SQL for node "model.google_snow.f_app_master_1"
+06:54:56.893735 [debug] [Thread-1  ]: Using snowflake connection "model.google_snow.f_app_master_1"
+06:54:56.893735 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "node_id": "model.google_snow.f_app_master_1"} */
+
+
+      create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1  as
+      (
+
+
+select
+ *
+from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."____33_"
+where SYS_UPDATED_ON <= '2021-10-13 05:33:49.000'
+      );
+06:54:56.893735 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+06:55:00.534888 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 3.64 seconds
+06:55:00.534888 [debug] [Thread-1  ]: finished collecting timing info
+06:55:00.534888 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: Close
+06:55:00.691065 [info ] [Thread-1  ]: 1 of 1 OK created table model AIRBYTE_SCHEMA.f_app_master_1 ............................................................ [[32mSUCCESS 1[0m in 3.83s]
+06:55:01.086726 [debug] [Thread-1  ]: Finished running node model.google_snow.f_app_master_1
+06:55:01.098974 [debug] [MainThread]: Acquiring new snowflake connection "master"
+06:55:01.099583 [info ] [MainThread]: 
+06:55:01.110379 [info ] [MainThread]: Finished running 1 table model in 6.01s.
+06:55:01.113953 [debug] [MainThread]: Connection 'master' was properly closed.
+06:55:01.114120 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+06:55:01.114283 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+06:55:01.114283 [debug] [MainThread]: Connection 'model.google_snow.f_app_master_1' was properly closed.
+06:55:01.121855 [info ] [MainThread]: 
+06:55:01.122280 [info ] [MainThread]: [32mCompleted successfully[0m
+06:55:01.124658 [info ] [MainThread]: 
+06:55:01.126185 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+
+
+============================== 2022-06-16 07:04:55.697574 | 3c0ec29d-b079-4c1e-b72e-9f8664e7ae68 ==============================
+07:04:55.697574 [info ] [MainThread]: Running with dbt=1.1.0
+07:04:55.697574 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone\\google_snow', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+07:04:55.697574 [debug] [MainThread]: Tracking: do not track
+07:04:55.759985 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+07:04:55.759985 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+07:04:55.759985 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.google_snow.example
+
+07:04:55.776337 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 383 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+07:04:55.776337 [info ] [MainThread]: 
+07:04:55.776337 [debug] [MainThread]: Acquiring new snowflake connection "master"
+07:04:55.776337 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+07:04:55.792300 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+07:04:55.792300 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE"} */
+
+    show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+07:04:55.792300 [debug] [ThreadPool]: Opening a new connection, currently in state init
+07:04:56.621548 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.83 seconds
+07:04:56.621548 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+07:04:56.725693 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+07:04:56.725693 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+07:04:56.725693 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+
+    show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+07:04:56.725693 [debug] [ThreadPool]: Opening a new connection, currently in state init
+07:04:59.429948 [debug] [ThreadPool]: SQL status: SUCCESS 23 in 2.7 seconds
+07:04:59.429948 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+07:04:59.556294 [info ] [MainThread]: Concurrency: 5 threads (target='prod')
+07:04:59.556294 [info ] [MainThread]: 
+07:04:59.565411 [debug] [Thread-1  ]: Began running node model.google_snow.f_app_master_1
+07:04:59.565411 [info ] [Thread-1  ]: 1 of 1 START table model AIRBYTE_SCHEMA.f_app_master_1 ................................................................. [RUN]
+07:04:59.565411 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.google_snow.f_app_master_1"
+07:04:59.565411 [debug] [Thread-1  ]: Began compiling node model.google_snow.f_app_master_1
+07:04:59.565411 [debug] [Thread-1  ]: Compiling model.google_snow.f_app_master_1
+07:04:59.565411 [debug] [Thread-1  ]: Writing injected SQL for node "model.google_snow.f_app_master_1"
+07:04:59.565411 [debug] [Thread-1  ]: finished collecting timing info
+07:04:59.565411 [debug] [Thread-1  ]: Began executing node model.google_snow.f_app_master_1
+07:04:59.581241 [debug] [Thread-1  ]: Writing runtime SQL for node "model.google_snow.f_app_master_1"
+07:04:59.581241 [debug] [Thread-1  ]: Using snowflake connection "model.google_snow.f_app_master_1"
+07:04:59.581241 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "node_id": "model.google_snow.f_app_master_1"} */
+
+
+      create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1  as
+      (
+
+
+select
+ *
+from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."____33_"
+where SYS_UPDATED_ON <= '2021-10-13 05:33:49.000'
+      );
+07:04:59.581241 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+07:05:06.774449 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 7.19 seconds
+07:05:06.774449 [debug] [Thread-1  ]: finished collecting timing info
+07:05:06.774449 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: Close
+07:05:06.915392 [info ] [Thread-1  ]: 1 of 1 OK created table model AIRBYTE_SCHEMA.f_app_master_1 ............................................................ [[32mSUCCESS 1[0m in 7.35s]
+07:05:06.915392 [debug] [Thread-1  ]: Finished running node model.google_snow.f_app_master_1
+07:05:06.931493 [debug] [MainThread]: Acquiring new snowflake connection "master"
+07:05:06.931493 [info ] [MainThread]: 
+07:05:06.931493 [info ] [MainThread]: Finished running 1 table model in 11.16s.
+07:05:06.931493 [debug] [MainThread]: Connection 'master' was properly closed.
+07:05:06.931493 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+07:05:06.931493 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+07:05:06.931493 [debug] [MainThread]: Connection 'model.google_snow.f_app_master_1' was properly closed.
+07:05:06.931493 [info ] [MainThread]: 
+07:05:06.931493 [info ] [MainThread]: [32mCompleted successfully[0m
+07:05:06.931493 [info ] [MainThread]: 
+07:05:06.931493 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+
+
+============================== 2022-06-16 08:02:59.678345 | 7718c31b-d50d-42f9-a00c-038d52f37e9f ==============================
+08:02:59.678345 [info ] [MainThread]: Running with dbt=1.1.0
+08:02:59.678345 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 120, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': 'C:\\Users\\Systena\\gitclone_pythonscript\\gitclone\\google_snow', 'send_anonymous_usage_stats': False, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'project_dir': 'C:\\Users\\Systena\\gitclone_pythonscript\\gitclone\\google_snow', 'full_refresh': True, 'which': 'run', 'rpc_method': 'run', 'indirect_selection': 'eager'}
+08:02:59.678345 [debug] [MainThread]: Tracking: do not track
+08:02:59.741387 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+08:02:59.741387 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+08:02:59.741387 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.google_snow.example
+
+08:02:59.757088 [info ] [MainThread]: Found 1 model, 2 tests, 0 snapshots, 0 analyses, 383 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+08:02:59.757088 [info ] [MainThread]: 
+08:02:59.757088 [debug] [MainThread]: Acquiring new snowflake connection "master"
+08:02:59.766340 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE"
+08:02:59.766340 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE"
+08:02:59.766340 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE"} */
+
+    show terse schemas in database AIRBYTE_DATABASE
+    limit 10000
+08:02:59.766340 [debug] [ThreadPool]: Opening a new connection, currently in state init
+08:03:02.496975 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 2.73 seconds
+08:03:02.499995 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE: Close
+08:03:02.616947 [debug] [ThreadPool]: Acquiring new snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+08:03:02.616947 [debug] [ThreadPool]: Using snowflake connection "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"
+08:03:02.616947 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA"} */
+
+    show terse objects in AIRBYTE_DATABASE.AIRBYTE_SCHEMA
+08:03:02.616947 [debug] [ThreadPool]: Opening a new connection, currently in state init
+08:03:04.650435 [debug] [ThreadPool]: SQL status: SUCCESS 23 in 2.03 seconds
+08:03:04.650435 [debug] [ThreadPool]: On list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA: Close
+08:03:05.513744 [info ] [MainThread]: Concurrency: 5 threads (target='prod')
+08:03:05.513744 [info ] [MainThread]: 
+08:03:05.529309 [debug] [Thread-1  ]: Began running node model.google_snow.f_app_master_1
+08:03:05.529309 [info ] [Thread-1  ]: 1 of 1 START table model AIRBYTE_SCHEMA.f_app_master_1 ................................................................. [RUN]
+08:03:05.529309 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.google_snow.f_app_master_1"
+08:03:05.529309 [debug] [Thread-1  ]: Began compiling node model.google_snow.f_app_master_1
+08:03:05.529309 [debug] [Thread-1  ]: Compiling model.google_snow.f_app_master_1
+08:03:05.529309 [debug] [Thread-1  ]: Writing injected SQL for node "model.google_snow.f_app_master_1"
+08:03:05.529309 [debug] [Thread-1  ]: finished collecting timing info
+08:03:05.529309 [debug] [Thread-1  ]: Began executing node model.google_snow.f_app_master_1
+08:03:05.545342 [debug] [Thread-1  ]: Writing runtime SQL for node "model.google_snow.f_app_master_1"
+08:03:05.545342 [debug] [Thread-1  ]: Using snowflake connection "model.google_snow.f_app_master_1"
+08:03:05.545342 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: /* {"app": "dbt", "dbt_version": "1.1.0", "profile_name": "normalize", "target_name": "prod", "node_id": "model.google_snow.f_app_master_1"} */
+
+
+      create or replace transient table AIRBYTE_DATABASE.AIRBYTE_SCHEMA.f_app_master_1  as
+      (
+
+
+select
+ *
+from "AIRBYTE_DATABASE"."AIRBYTE_SCHEMA"."____33_"
+where SYS_UPDATED_ON <= '2021-10-13 05:33:49.000'
+      );
+08:03:05.545342 [debug] [Thread-1  ]: Opening a new connection, currently in state init
+08:03:12.433804 [debug] [Thread-1  ]: SQL status: SUCCESS 1 in 6.89 seconds
+08:03:12.449331 [debug] [Thread-1  ]: finished collecting timing info
+08:03:12.449331 [debug] [Thread-1  ]: On model.google_snow.f_app_master_1: Close
+08:03:14.780528 [info ] [Thread-1  ]: 1 of 1 OK created table model AIRBYTE_SCHEMA.f_app_master_1 ............................................................ [[32mSUCCESS 1[0m in 9.25s]
+08:03:14.780528 [debug] [Thread-1  ]: Finished running node model.google_snow.f_app_master_1
+08:03:14.793916 [debug] [MainThread]: Acquiring new snowflake connection "master"
+08:03:14.793916 [info ] [MainThread]: 
+08:03:14.793916 [info ] [MainThread]: Finished running 1 table model in 15.04s.
+08:03:14.793916 [debug] [MainThread]: Connection 'master' was properly closed.
+08:03:14.793916 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE' was properly closed.
+08:03:14.793916 [debug] [MainThread]: Connection 'list_AIRBYTE_DATABASE_AIRBYTE_SCHEMA' was properly closed.
+08:03:14.793916 [debug] [MainThread]: Connection 'model.google_snow.f_app_master_1' was properly closed.
+08:03:14.793916 [info ] [MainThread]: 
+08:03:14.793916 [info ] [MainThread]: [32mCompleted successfully[0m
+08:03:14.793916 [info ] [MainThread]: 
+08:03:14.793916 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
